@@ -1,0 +1,11 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2008-2011 OpenWrt.org
+
+START=99
+
+start() {
+	insmod /lib/modules/2.6.36/hello.ko
+}
+stop() {
+	rmmod hello
+}
